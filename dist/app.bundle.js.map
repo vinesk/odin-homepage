@@ -1,1 +1,0 @@
-{"version":3,"file":"app.bundle.js","mappings":"AAAAA,SAASC,KAAKC,YAAc","sources":["webpack://template/./src/index.js"],"sourcesContent":["document.body.textContent = \"Hello world!\";\n"],"names":["document","body","textContent"],"sourceRoot":""}

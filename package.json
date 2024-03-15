@@ -1,7 +1,7 @@
 {
   "name": "template",
   "version": "1.0.0",
-  "description": "",
+  "description": "https://www.theodinproject.com/lessons/node-path-javascript-linting",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -31,5 +31,6 @@
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
-  }
+  },
+  "main": "webpack.common.js"
 }

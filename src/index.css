@@ -1,0 +1,124 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* Reset */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Variables */
+:root {
+  /* Colors */
+  --color-primary: #0592b3;
+  --color-secondary: #565656;
+  --black: #000;
+  --white: #fff;
+
+  /* Font families */
+  --font-family-body: "Roboto", sans-serif;
+  --font-family-title: "Playfair Display", serif;
+
+  /* Font sizes */
+  --font-size-body: 1rem;
+  --font-size-h3: 1.5rem;
+  --font-size-h2: 2rem;
+  --font-size-h1: 2.5rem;
+
+  /* Spaces */
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1.25rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+}
+
+/* Global */
+body {
+  font-family: var(--font-family-body);
+  font-size: var(--font-size-body);
+}
+
+h3 {
+  font-family: var(--font-family-title);
+  font-size: var(--font-size-h3);
+}
+
+h2 {
+  font-family: var(--font-family-title);
+  font-size: var(--font-size-h2);
+}
+
+h1 {
+  font-family: var(--font-family-title);
+  font-size: var(--font-size-h1);
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+/* App */
+#app {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  grid-area: header;
+  padding: var(--space-xl);
+  color: var(--white);
+  background-color: var(--color-primary);
+}
+
+.main {
+  grid-area: main;
+  padding: var(--space-xl);
+}
+
+.footer {
+  grid-area: footer;
+  padding: var(--space-xl);
+  color: var(--white);
+  background-color: var(--color-primary);
+}
